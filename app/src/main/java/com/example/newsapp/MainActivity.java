@@ -74,8 +74,8 @@ public class MainActivity extends AppCompatActivity implements CategoryRVAdapter
     private void getNews(String category) {
         loadingPB.setVisibility(View.VISIBLE);
         articlesArrayList.clear();
-        String categoryURL = "https://newsapi.org/v2/top-headlines?country=in&category="+category+"&apiKey=fdfcd2cd6cee40d9b848034bfaa7e280";
-        String url = "https://newsapi.org/v2/top-headlines?country=in&excludeDomains=stackoverflow.com&sorrtBy=publishedAt&language=en&apiKey=fdfcd2cd6cee40d9b848034bfaa7e280";
+        String categoryURL = "https://newsapi.org/v2/top-headlines?country=in&category="+category+"&apiKey=API_KEY";
+        String url = "https://newsapi.org/v2/top-headlines?country=in&excludeDomains=stackoverflow.com&sorrtBy=publishedAt&language=en&apiKey=API_KEY";
         String BASE_URL = "https://newsapi.org/";
         Retrofit retrofit = new Retrofit.Builder()
                 .baseUrl(BASE_URL)
